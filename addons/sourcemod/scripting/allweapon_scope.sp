@@ -41,7 +41,7 @@ public void OnPluginStart()
 		SetFailState("This plugin is for CSGO/CSS only.");	
 	}
 	
-	sm_allscope_flag = CreateConVar("sm_allscope_flag", "", "admin flag for donators menu (empty for all players)");
+	sm_allscope_flag = CreateConVar("sm_allscope_flag", "", "admin flag for allscope (empty for all players)");
 	RegConsoleCmd("sm_allscope", Allscope);
 	HookEvent("weapon_fire", Event_OnFire);
 }
